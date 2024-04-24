@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="./img/calculator.png" />
+  <link rel="stylesheet" href="binary_calculator.css">
+  <title>Binary Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">
+      <input id="user_input" placeholder="Enter binary number (0 or 1)" pattern="[01]*" title="Please enter only binary digits (0 or 1)">
+      <br>
+      <button class="btn" onclick="press('1')">1</button>
+      <button class="btn" onclick="press('0')">0</button>
+      <button style="background:#ffb84d;" class="btn" onclick="press('+')">+</button>
+      <button style="background: #ffcc80;" class="btn" onclick="press('-')">-</button>
+      <br>
+      <button class="btnEqual" onclick="calculate()">=</button>
+      <button class="btn" onclick="erase()">C</button>
+    </div>
+  </div>
+
+  <script src="./javascript/binary_calculator.js"></script>
+</body>
+</html>
